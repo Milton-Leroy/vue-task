@@ -1,5 +1,11 @@
 <script setup>
 import Child from './components/Child.vue'
+
+let data = [
+  { id: 1, name: 'John' },
+  { id: 2, name: 'Jane' },
+  { id: 3, name: 'Doe' }
+]
 </script>
 
 <template>
@@ -11,6 +17,11 @@ import Child from './components/Child.vue'
 
   <br>
   <br>
+
+
+  <p v-for="number in 10">
+    {{ number }}. This is a number
+  </p>
 
   <hr>
 
